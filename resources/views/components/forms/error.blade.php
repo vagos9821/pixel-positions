@@ -1,3 +1,5 @@
-<div>
-    <div class="my-10 h-px w-full bg-white/10"></div>
-</div>
+@props(['error' => false])
+
+@if ($error)
+    <p class="mt-1 text-sm text-red-500">{{ $error }}</p>
+@endif
